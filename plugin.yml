@@ -1,0 +1,9 @@
+name: NoAttackCooldown
+version: 1.0
+author: wenjalan
+main: wenjalan.NoAttackCooldown
+api-version: 1.14
+commands:
+  setattackspeed:
+    description: Sets the Attack Speed attribute of all players
+    usage: /setattackspeed [0.0 - 1024.0]

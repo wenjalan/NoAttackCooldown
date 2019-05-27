@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'wenjalan'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+jar {
+    baseName = 'NoAttackCooldown'
+    include 'plugin.yml'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile name: 'spigot-api-1.14.1-R0.1-SNAPSHOT'
+}
